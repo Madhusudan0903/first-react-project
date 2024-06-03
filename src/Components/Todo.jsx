@@ -28,7 +28,7 @@ export const Todo = () => {
 
   return (
     <div className="todo">
-        <div className="todo-header">To-Do List</div> I
+        <div className="todo-header">My To-Do List App</div> I
         <div className="todo-add">
             <input ref={inputRef} type="text" placeholder='Add Your Task' className='todo-input' />
             <div onClick={()=>{add()}} className="todo-add-btn">ADD</div>
