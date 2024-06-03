@@ -29,8 +29,11 @@ jobs:
         env:
           REACT_APP_WELCOME_TEXT: ${{ vars.REACT_APP_WELCOME_TEXT }}
 
+      - name: Verify dist directory
+        run: ls -la dist
+
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.0 #ye previously build action hai
         with:
           branch: gh-pages
-          folder: build
+          folder: dist
