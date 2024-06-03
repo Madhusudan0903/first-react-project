@@ -36,4 +36,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.0 #ye previously build action hai
         with:
           branch: gh-pages
-          folder: dist
+          folder: dist #jab vite se project bnaoge tb yaha pe dist ayega aur sidha create react app se bnaya tb build ayega
